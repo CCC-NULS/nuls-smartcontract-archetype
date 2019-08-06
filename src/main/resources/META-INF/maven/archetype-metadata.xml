@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor  name="beast-archetype"
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+            http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+
+<requiredProperties>
+    <requiredProperty key="groupId">
+        <defaultValue>${groupId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="artifactId">
+        <defaultValue>${artifactId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="package">
+        <defaultValue>${package}</defaultValue>
+    </requiredProperty>
+</requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
