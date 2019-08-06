@@ -7,10 +7,10 @@ When creating a smart contract project, add the NULS smart contract archetype to
 - Maven 3.5 and above
 
 ### Get the source
-     git clone https://github.com/meilongwhpu/nuls-smartcontract-archetype.git
+     git clone https://github.com/CCC-NULS/nuls-smartcontract-archetype.git
 
 ### Build source
-    $mvn clean install
+    mvn clean install
 After building maven successfully, the artifacts will be uploaded to your local maven repository.
 ## Configuring maven run parameters
 In order to solve the problem of Intellij IDEA creating a Maven project through archetype slowly, increase the maven run parameters:
