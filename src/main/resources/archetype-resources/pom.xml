@@ -49,6 +49,8 @@
 							<mainClass>io.nuls.contract.ContractApplication</mainClass>
 							<arguments>
 								<argument>${project.build.directory}</argument>
+								<argument>8081</argument>
+								<argument>true</argument>
 							</arguments>
 						</configuration>
 					</execution>
